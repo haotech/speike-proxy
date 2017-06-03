@@ -15,12 +15,33 @@ module.exports = function (port) {
         },
         mock: false
       },
+
+      alarm: {
+        options: {
+          url: '/user',
+          method: 'GET'
+        },
+        rule: {
+          'name': '@NAME',
+          'height|150-200': 1
+        },
+        mock: false
+      },
+
+      mock: {
+        options: {
+          url: '/mock',
+          method: 'GET'
+        },
+        rule: {
+          'name': '@NAME',
+          'age|0-100': 1,
+          'height|150-200': 1
+        },
+        mock: true
+      },
     },
     mock: true,
-    alarm: function ({options, rule, data}) {
-      console.log('----------- Warning Server Data Error------------');
-      console.log({options, rule, data});
-      console.log('----------- Warning End ------------');
-    }
+    alarm: function ({options, rule, data}) {}
   })
 };
