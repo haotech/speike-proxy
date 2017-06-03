@@ -1,0 +1,28 @@
+{
+  "name": "speike",
+  "version": "1.0.0",
+  "description": "A proxy module for Node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ava": "^0.19.1",
+    "mockjs": "^1.0.1-beta3",
+    "urllib": "^2.22.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "ava test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haotech/speike.git"
+  },
+  "author": "Berwin <liubowen.niubi@gmail.com> (https://github.com/berwin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haotech/speike/issues"
+  },
+  "homepage": "https://github.com/haotech/speike#readme"
+}
