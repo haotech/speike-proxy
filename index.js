@@ -1,1 +1,1 @@
-module.exports = require('./lib/proxy.js');
+module.exports = require('./lib/proxy.js')

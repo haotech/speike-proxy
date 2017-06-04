@@ -1,4 +1,4 @@
-const Proxy = require('../index.js');
+const Proxy = require('../index.js')
 
 module.exports = function (port) {
   return new Proxy({
@@ -39,9 +39,9 @@ module.exports = function (port) {
           'height|150-200': 1
         },
         mock: true
-      },
+      }
     },
     mock: true,
     alarm: function ({options, rule, data}) {}
   })
-};
+}

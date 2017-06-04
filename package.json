@@ -7,13 +7,17 @@
     "test": "test"
   },
   "dependencies": {
-    "ava": "^0.19.1",
     "mockjs": "^1.0.1-beta3",
     "urllib": "^2.22.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "coveralls": "^2.13.1",
+    "nyc": "^11.0.2",
+    "standard": "^10.0.2"
+  },
   "scripts": {
-    "test": "ava test/index.js"
+    "test": "standard && nyc ava test/index.js"
   },
   "repository": {
     "type": "git",
