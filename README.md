@@ -1,4 +1,5 @@
 # speike-proxy
+[![npm](https://img.shields.io/npm/v/speike-proxy.svg)](https://www.npmjs.com/package/speike-proxy)
 [![Build Status](https://travis-ci.org/haotech/speike.svg?branch=master)](https://travis-ci.org/haotech/speike)
 [![Coverage Status](https://coveralls.io/repos/github/haotech/speike-proxy/badge.svg?branch=master)](https://coveralls.io/github/haotech/speike-proxy?branch=master)
 
