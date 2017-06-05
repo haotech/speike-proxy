@@ -15,7 +15,7 @@ $ npm install speike-proxy --save
 
 一个简单的例子，向 `http://xxx.com/user` 发送GET请求，获取数据并校验返回数据是否符合 `rule` 中配置的规则。
 
-```
+```javascript
 const Proxy = require('speike-proxy');
 const proxy = new Proxy({
   baseUrl: 'http://xxx.com',
@@ -63,7 +63,7 @@ proxy.test({...}).then(result => {
 
 一个经典案例
 
-```
+```javascript
 const Proxy = require('speike-proxy');
 const proxy = new Proxy({
   baseUrl: 'http://xxx.com',
@@ -119,7 +119,7 @@ proxy.test({...}).then(result => {
    - **res** IncomingMessage - Response
 
 #### 例子：
-```
+```javascript
 proxy.test({...}).then(({data, res}) => {
   console.log('data: ${data}, res: ${res}');
 });
@@ -127,7 +127,7 @@ proxy.test({...}).then(({data, res}) => {
 
 or 
 
-```
+```javascript
 proxy.test({...}, (err, data, res) => {
   console.log('data: ${data}, res: ${res}');
 });
@@ -178,7 +178,7 @@ Mock 规范包括两部分：
 
 **数据模板中的每个属性由 3 部分构成：属性名、生成规则、属性值：**
 
-```
+```javascript
 // 属性名   name
 // 生成规则 rule
 // 属性值   value
@@ -214,7 +214,7 @@ Mock 规范包括两部分：
   2. `'name|min-max': number` 生成一个大于等于 min、小于等于 max 的整数，属性值 number 只是用来确定类型。
   3. `'name|min-max.dmin-dmax': number` 生成一个浮点数，整数部分大于等于 min、小于等于 max，小数部分保留 dmin 到 dmax 位。
 
-```
+```javascript
 {
     'number1|1-100.1-10': 1,
     'number2|123.1-10': 1,
@@ -230,7 +230,7 @@ Mock 规范包括两部分：
 }
 ```
 
-** 3. 属性值是布尔型 Boolean **
+**3. 属性值是布尔型 Boolean**
   1. `'name|1': boolean` 随机生成一个布尔值，值为 `true` 的概率是 1/2，值为 `false` 的概率同样是 `1/2`。
   2. `'name|min-max': value` 随机生成一个布尔值，值为 `value` 的概率是 `min / (min + max)`，值为 `!value` 的概率是 `max / (min + max)`。
 
@@ -251,7 +251,7 @@ Mock 规范包括两部分：
 
   1. `'name': regexp` 根据正则表达式 regexp 反向生成可以匹配它的字符串。用于生成自定义格式的字符串。
 
-```
+```javascript
 {
     'regexp1': /[a-z][A-Z][0-9]/,
     'regexp2': /\w\W\s\S\d\D/,
@@ -271,7 +271,7 @@ Mock 规范包括两部分：
 
 占位符 的格式为：
 
-```
+```javascript
 @占位符
 @占位符(参数 [, 参数])
 ```
@@ -285,7 +285,7 @@ Mock 规范包括两部分：
 5. 占位符 会优先引用 数据模板 中的属性。
 6. 占位符 支持 相对路径 和 绝对路径。
 
-```
+```javascript
 {
     name: {
         first: '@FIRST',
