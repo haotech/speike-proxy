@@ -1,7 +1,7 @@
 # speike-proxy
 [![Build Status](https://travis-ci.org/haotech/speike.svg?branch=master)](https://travis-ci.org/haotech/speike)
 
-一个 Node.js 代理模块~
+一个 Node.js 前后端中间层代理模块~
 
 ## 安装
 
