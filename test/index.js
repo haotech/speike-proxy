@@ -13,6 +13,14 @@ test('should check server return data and passed', t => {
   })
 })
 
+test.cb('should check server return data and passed 2', t => {
+  proxy.pass((err, data, res) => {
+    t.ifError(err)
+    t.is(res.status, 200)
+    t.end()
+  })
+})
+
 test('Should check server return data and throw error', t => {
   return proxy.alarm().catch(() => {
     t.pass()
