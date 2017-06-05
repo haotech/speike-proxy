@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haotech/speike.git"
+    "url": "git+https://github.com/haotech/speike-proxy.git"
   },
   "author": "Berwin <liubowen.niubi@gmail.com> (https://github.com/berwin)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haotech/speike/issues"
+    "url": "https://github.com/haotech/speike-proxy/issues"
   },
-  "homepage": "https://github.com/haotech/speike#readme"
+  "homepage": "https://github.com/haotech/speike-proxy#readme"
 }
