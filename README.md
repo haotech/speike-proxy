@@ -1,5 +1,6 @@
 # speike-proxy
 [![Build Status](https://travis-ci.org/haotech/speike.svg?branch=master)](https://travis-ci.org/haotech/speike)
+[![Coverage Status](https://coveralls.io/repos/github/haotech/speike-proxy/badge.svg?branch=master)](https://coveralls.io/github/haotech/speike-proxy?branch=master)
 
 一个 Node.js 前后端中间层代理模块~
 
@@ -9,7 +10,7 @@
 $ npm install speike-proxy --save
 ```
 
-注意：运行以上命令的前提是已经安装了 Node.js 和 npm 。
+Node.js >= 6.0.0 required.
 
 ## 使用
 
