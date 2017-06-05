@@ -1,5 +1,5 @@
 {
-  "name": "speike",
+  "name": "speike-proxy",
   "version": "1.0.0",
   "description": "A proxy module for Node.js",
   "main": "index.js",
