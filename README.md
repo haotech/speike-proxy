@@ -1,6 +1,6 @@
 # speike-proxy
 [![npm](https://img.shields.io/npm/v/speike-proxy.svg)](https://www.npmjs.com/package/speike-proxy)
-[![Build Status](https://travis-ci.org/haotech/speike.svg?branch=master)](https://travis-ci.org/haotech/speike)
+[![Build Status](https://travis-ci.org/haotech/speike-proxy.svg?branch=master)](https://travis-ci.org/haotech/speike-proxy)
 [![Coverage Status](https://coveralls.io/repos/github/haotech/speike-proxy/badge.svg?branch=master)](https://coveralls.io/github/haotech/speike-proxy?branch=master)
 
 一个 Node.js 前后端中间层代理模块~
