@@ -1,6 +1,6 @@
 {
   "name": "speike-proxy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A proxy module for Node.js",
   "main": "index.js",
   "directories": {
